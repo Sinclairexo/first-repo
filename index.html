@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Sales Page</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar">
+            <img src="logo.png" alt="Logo" class="logo">
+            <a href="#" class="toggle.btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="content-section">
+            <h1>MAXEDGE SALES</h1>
+            <p><b>Welcome to MAXEDGE Electronics - Your Go-To Destination for Cutting-Edge Electronics.</b>
+                Discover the latest in tech innovation and unbeatable deals. From sleek gadgets to essential gear, we’ve got everything you need to stay ahead of the curve.<b> Explore, shop, and Elevate your Tech Experience with us today!</p>
+            <div class="button">
+                <a href="">Check us Out</a>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        const toggleBtn = document.getElementsByClassName ("toggle-btn")[0]
+        const navmenu = document.getElementsByClassName ("nav-menu")[0]
+        toggleBtn.addEventlistener("click", () =>{
+            navmenu.Classlist.toggle('active')
+        })
+    </script>
+</body>
+</html>

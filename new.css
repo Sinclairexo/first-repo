@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Kalam", cursive;
+}
+
+h1 {
+  color: lightgrey;
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+p{
+    color: white;
+    font-size: 15px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.header{
+    min-height: 100vh;
+    /* background-image:url("now.jpeg"); */
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0, 0.7)),url('/now.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.navbar{
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 45px;
+}
+
+.navbar .logo{
+   width: 65px;
+   height: 55px;
+
+}
+
+.nav-menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-menu ul li{
+    list-style: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav-menu ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+}
+
+.nav-menu ul li:hover{
+    background-color: orange;
+    transition: 0.5s ease;
+}
+.toggle.btn{
+    position: absolute;
+    top: 20%;
+    right: 60%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 22px;
+    width: 32px;
+}
+toggle.btn .bar{
+    height: 4px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.content-section{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0% 60px;
+}
+.content-section .button{
+margin-top: 25px;
+}
+
+.content-section .button a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: inline-block;
+    background-color: purple;
+    border-radius: 5px;
+    padding: 14px 5px;
+    letter-spacing: 1.5px;
+}
+
+.content-section .button a:hover{
+    background-color: lightgrey;
+    transition: 0.5s ease;
+}
+
+@media screen and (max-width: 768px){
+    .toggle.btn{
+        display: flex;
+        z-index: 2;
+    }
+    .nav-menu ul{
+        width: 20%;
+        background-color: #508089;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 0px;
+        position: absolute;
+        text-align: center;
+        justify-content: center;
+        top: 0;
+        /* left: 0; */
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+    .nav-menu{
+        display: flex;
+        width: 100%;
+    }
+    .nav-menu ul li{
+        margin: 10px 0px;
+    }
+    .nav-menu ul li a{
+        font-size: 19px;
+    }
+    .nav-menu .logo{
+        font-size: 29px;
+    }
+    h1{
+        font-size: 50px;
+    }
+    p{
+        font-size: 15px;
+    }
+    .content-section .button a{
+        font-size: 17px;
+        padding: 8px 15px;
+    }
+    .nav-menu.active{
+        display: flex;
+    }
+
+}
