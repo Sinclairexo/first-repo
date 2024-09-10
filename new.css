@@ -21,8 +21,6 @@ p{
 }
 
 .header{
-    min-height: 100vh;
-    /* background-image:url("now.jpeg"); */
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0, 0.7)),url('/now.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -35,6 +33,8 @@ p{
     justify-content: space-between;
     align-items: center;
     padding: 10px 45px;
+    position: sticky;
+    top: 0;
 }
 
 .navbar .logo{
@@ -81,14 +81,18 @@ toggle.btn .bar{
     background-color: #fff;
     border-radius: 10px;
 }
+.mid-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: solid 1px red; */
+    min-height: 100vh;
+    height: 100%;
+}
 .content-section{
     width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
-    padding: 0% 60px;
+ 
 }
 .content-section .button{
 margin-top: 25px;
@@ -157,4 +161,32 @@ margin-top: 25px;
         display: flex;
     }
 
+}
+.div
+
+
+
+
+h2{
+    color: black;
+    font-size: 35px;
+    font-weight: 500;
+    font-family: "Libre Baskerville", serif;
+}
+
+p2{
+    color: grey;
+    font-size: small;
+    
+}
+
+
+
+.section2{
+    display: flex;
+    background: white;
+}
+
+.section2 > div{
+    width: 50%;
 }

@@ -3,43 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Demo Sales Page</title>
-    <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="header">
-        <nav class="navbar">
-            <img src="logo.png" alt="Logo" class="logo">
-            <a href="#" class="toggle.btn">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </a>
-            <div class="nav-menu">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Services</a></li>
-                </ul>
-            </div>
-        </nav>
-        <div class="content-section">
-            <h1>MAXEDGE SALES</h1>
-            <p><b>Welcome to MAXEDGE Electronics - Your Go-To Destination for Cutting-Edge Electronics.</b>
-                Discover the latest in tech innovation and unbeatable deals. From sleek gadgets to essential gear, we’ve got everything you need to stay ahead of the curve.<b> Explore, shop, and Elevate your Tech Experience with us today!</p>
-            <div class="button">
-                <a href="">Check us Out</a>
-            </div>
-        </div>
-    </div>
 
-    <script type="text/javascript">
-        const toggleBtn = document.getElementsByClassName ("toggle-btn")[0]
-        const navmenu = document.getElementsByClassName ("nav-menu")[0]
-        toggleBtn.addEventlistener("click", () =>{
-            navmenu.Classlist.toggle('active')
-        })
-    </script>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        
+        <div>
+            <h1>MAXEDGE ELECTRONICS</h1>
+            <p>Welcome to MAXEDGE Electronics - Your Go-To Destination for Cutting-Edge Electronics.</b>
+                Discover the latest in tech innovation and unbeatable deals. From sleek gadgets to essential gear, we’ve got everything you need to stay ahead of the curve.<b> Explore, shop, and Elevate your Tech Experience with us today!</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>"Welcome to Maxedge Electronics Hub! Here, you'll find a wide range of cutting-edge devices to enhance your digital lifestyle. From smartphones and laptops to home appliances and gaming consoles, we've got you covered. Explore our carefully curated collections, read detailed product reviews, and make informed purchases. We're committed to providing you with the best shopping experience.
+            Let's embark on this digital journey together!" 
+            <b>Contact us for everything you need and want in the MEDIA/ELECTRONICS world</b></p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out through the form below.</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <a href="http://wa.me/09048271327?text=hello" target="_blank"> MESSAGE US  </a>
+        <p>&copy; 2024 My Website</p>
+    </footer>
+
 </body>
 </html>
